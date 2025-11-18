@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const fs = require('fs');
 
 const app = express();
-const PORT = 3000;
+const PORT = 80;
 
 // Configurar EJS
 app.set('view engine', 'ejs');
@@ -27,7 +27,7 @@ const postSchema = new mongoose.Schema({
 const Post = mongoose.model('Post', postSchema);
 
 // Conectar ao MongoDB Atlas
-const MONGODB_URI = 'mongodb+srv://userFei:passfei20@serverfei.y5vof3e.mongodb.net/blog?retryWrites=true&w=majority&appName=serverFei';
+const MONGODB_URI = 'mongodb+srv://userFei:passfei20@serverfei.y5vof3e.mongodb.net/?appName=serverFei';
 
 mongoose.connect(MONGODB_URI)
     .then(() => console.log('✅ Conectado ao MongoDB Atlas'))
