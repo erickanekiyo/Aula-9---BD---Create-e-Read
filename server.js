@@ -27,7 +27,7 @@ const postSchema = new mongoose.Schema({
 const Post = mongoose.model('Post', postSchema);
 
 // Conectar ao MongoDB Atlas
-const MONGODB_URI = 'mongodb+srv://userFei:passfei20@serverfei.y5vof3e.mongodb.net/?appName=serverFei';
+const MONGODB_URI = 'adicione o link online do seu servidor do MongoDB';
 
 mongoose.connect(MONGODB_URI)
     .then(() => console.log('✅ Conectado ao MongoDB Atlas'))
